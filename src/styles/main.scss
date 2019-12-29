@@ -5,3 +5,84 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+* {
+  &:focus {
+    outline: 1px solid $hover-color;
+  }
+}
+
+.main__btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 15px 25px;
+  transition: all 0.3s;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  background-color: transparent;
+  color: #000000;
+  border-radius: 50px;
+  &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+  }
+  &--white {
+    background-color: #ffffff;
+  }
+}
+
+.main__title {
+
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 30px;
+  span {
+    font-weight: 700;
+  }
+}
+
+.main__desc {
+  font-size: 14px;
+  line-height: 24px;
+  color: #7e7e7e;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .main__btn {
+    padding: 15px 60px;
+  }
+
+  .main__title {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  .main__desc {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .main__title {
+    margin-bottom: 50px;
+  }
+}

@@ -7,28 +7,640 @@
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        
-        
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor.js"></script>
+        <header class="header">
+
+	<div class="header__top">
+		<a href="" class="logo">
+	<svg class="logo__svg">
+		<use xlink:href="img/sprites/sprite.svg#logo"></use>
+	</svg>
+</a>
+		<ul class="social__list">
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+		<ul class="header__contacts">
+			<li class="header__contacts-item">
+				<svg class="header__contact-item-icon">
+					<use xlink:href="img/sprites/sprite.svg#phone"></use>
+				</svg>
+				<div class="header__contacts-item-content">
+					<a href="">+7 (343) 311-65-05</a>
+					<p>ТРЦ Алатырь,
+						ул. Малышева, 5</p>
+				</div>
+			</li>
+			<li class="header__contacts-item">
+				<svg class="header__contact-item-icon">
+					<use xlink:href="img/sprites/sprite.svg#sign"></use>
+				</svg>
+				<div class="header__contacts-item-content">
+					<a href="">Записаться</a>
+					<p>на консультацию</p>
+				</div>
+			</li>
+		</ul>
+		<button class="main-menu__btn cmn-toggle-switch cmn-toggle-switch__htx">
+	<span>toggle menu</span>
+</button>
+<nav class="main-menu">
+	<ul class="main-menu__list">
+		<li class="main-menu__item main-menu__item-sub"><a href="" class="sub-link">Услуги и стоимость</a>
+		<ul class="sub-menu">
+			<li><a href="">SPA Массаж</a></li>
+			<li><a href="">SPA Комплекс</a></li>
+			<li><a href="">SPA Уход за лицом</a></li>
+			<li><a href="">Парикхмахерская</a></li>
+			<li><a href="">Санаторий у дома</a></li>
+		</ul>
+		</li>
+		<li class="main-menu__item main-menu__item-sub"><a href="" class="sub-link">Спецпредложения</a>
+			<ul class="sub-menu">
+				<li><a href="">1</a></li>
+			</ul>
+		</li>
+		<li class="main-menu__item"><a href="">Статьи</a></li>
+		<li class="main-menu__item"><a href="">Отзывы</a></li>
+		<li class="main-menu__item"><a href="">Контакты</a></li>
+	</ul>
+
+	<a href="tel:+73433116505" class="main-menu__phone">+7 (343) 311-65-05</a>
+	<span>ТРЦ Алатырь, ул. Малышева, 5</span>
+	<ul class="social__list">
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+</nav>
+	</div>
+	<ul class="header__menu">
+		<li><a href="#methods-01">ФИТОТЕРАПИЯ</a></li>
+		<li><a href="#methods-02">РЕФЛЕКСОТЕРАПИЯ</a></li>
+		<li><a href="#methods-03">КИТАЙСКИЙ МАССАЖ</a></li>
+		<li><a href="#subscribe">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a></li>
+	</ul>
+</header>
+        <section class="promo">
+	<h1 class="promo__title">Уникальная консультация китайского&nbsp;профессора Чжан&nbsp;Сяовэй</h1>
+	<p class="promo__desc">Формула качественной жизни китайской традиционной медицины</p>
+	<div class="promo__btn-wrapper">
+		<a href="" class="main__btn main__btn--white callback-btn">Записаться</a>
+		<a href="" class="main__btn popup popup--promo">Подробнее</a>
+	</div>
+</section>
+        <section class="distinction">
+	<h2 class="main__title"><span>Отличия</span> китайской и западной медицины</h2>
+	<ul class="distinction__list">
+		<li>Главное отличие между классической европейской и китайской медициной
+			в их подходе к лечению заболевания.
+		</li>
+		<li>Основную разницу между двумя можно описать так:
+			девиз западной медицины - «Ты не справишься, я тебя заменю».</li>
+		<li>В то же время девиз китайской медицины - «Ты справишься,
+			я тебе помогу».</li>
+	</ul>
+	<a href="" class="main__btn popup popup--distinction">Подробнее</a>
+</section>
+        <section class="methods">
+	<h2 class="main__title"><span>Методики</span> китайской медицины</h2>
+	<ul class="methods__list">
+		<li class="methods__item" id="methods-01">
+			<div class="methods__item-img" style="background-image: url(img/methods_01.jpg)"></div>
+			<div class="methods__item-content">
+				<h3 class="methods__item-title">Фитотерапия</h3>
+				<p class="methods__item-desc">Практикуется в Китае с древнейших времен, до появления иероглифики.</p>
+				<p class="methods__item-txt">Основное назначение фитотерапии - профилактика и оздоровление внутренних систем организма </p>
+				<ul class="methods__tag">
+					<li>Стресс</li>
+					<li>Хроническая усталость</li>
+					<li>Гастрит</li>
+				</ul>
+				<a href="" class="methods__link popup popup--method-01">
+					<span>Подробнее</span>
+					<svg class="methods__link-icon">
+						<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</li>
+		<li class="methods__item" id="methods-02">
+			<div class="methods__item-img" style="background-image: url(img/methods_02.jpg)"></div>
+			<div class="methods__item-content">
+				<h3 class="methods__item-title">Рефлексотерапия</h3>
+				<p class="methods__item-desc">Применяется в Китае более 3000 лет.</p>
+				<p class="methods__item-txt">Основное назначение рефлексотерапии - профилактика и оздоровление опорно-двигательного аппарата</p>
+				<ul class="methods__tag">
+					<li>Артрит</li>
+					<li>Миозит</li>
+					<li>Остеохондроз</li>
+				</ul>
+				<a href="" class="methods__link popup popup--method-02">
+					<span>Подробнее</span>
+					<svg class="methods__link-icon">
+						<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</li>
+		<li class="methods__item" id="methods-03">
+			<div class="methods__item-img" style="background-image: url(img/methods_03.jpg)"></div>
+			<div class="methods__item-content">
+				<h3 class="methods__item-title">Китайский массаж</h3>
+				<p class="methods__item-desc">Практикуется в Китае с древнейших времен</p>
+				<p class="methods__item-txt">Особенность метода – специалист воздействует руками на точки акупунктуры, его движения направлены вдоль энергетических каналов. Начинается с массажа лица, постепенно руки массажиста симметрично прорабатывают все зоны тела.</p>
+				<a href="" class="methods__link popup popup--method-03">
+					<span>Подробнее</span>
+					<svg class="methods__link-icon">
+						<use xlink:href="img/sprites/sprite.svg#arrow"></use>
+					</svg>
+				</a>
+			</div>
+		</li>
+	</ul>
+</section>
+				<section class="diagnose">
+	<h2 class="main__title"><span>Диагнозы</span> и оздоровление</h2>
+	<p class="main__desc">Показательные случаи в практике профессора Чжан Сяовэй</p>
+	<ul class="diagnose__list">
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Артрит коленного сустава</h3>
+			<p class="diagnose__item-desc">Проведено 5 сеансов рефлексотерапии по 30 минут, в течение 2-х недель</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Межпозвоночная грыжа</h3>
+			<p class="diagnose__item-desc">Проведено 2 сеанса рефлексотерапии по 30 минут за 1 неделю</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Миозит или воспаление мышечного волокна</h3>
+			<p class="diagnose__item-desc">Облегчение после 1-й 30-минутной процедуры рефлексотерапии</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Защемление седалищного нерва</h3>
+			<p class="diagnose__item-desc">Пройдено 2 сеанса рефлексотерапии по 30 минут за 1 неделю</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Послеоперационные рубцы</h3>
+			<p class="diagnose__item-desc">Загрубевшие внутренние швы размягчились за 3 сеанса рефлексотерапии по 30 минут</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Периатрит плеча</h3>
+			<p class="diagnose__item-desc">Рефлексотерапия 5 сеансов по 30 минут, пройденных в течении двух недель</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Язвенный колит</h3>
+			<p class="diagnose__item-desc">Трехмесячный курс фитотерапии привел к глубокой ремиссии </p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Сахарный диабет</h3>
+			<p class="diagnose__item-desc">Месячный курс фитотерапии
+				снизил сахар в крови с 10 до 8 ммоль</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Гайморит</h3>
+			<p class="diagnose__item-desc">Месячный курс фитотерапии</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Приступы агрессии</h3>
+			<p class="diagnose__item-desc">Месячный курс фитотерапии</p>
+		</li>
+		<li class="diagnose__item">
+			<h3 class="diagnose__item-title">Нервное расстройство</h3>
+			<p class="diagnose__item-desc">Месячный курс фитотерапии привел к длительной ремиссии</p>
+		</li>
+		<li class="diagnose__item">
+			<a href="" class="logo">
+				<svg class="logo__svg">
+					<use xlink:href="img/sprites/sprite.svg#logo"></use>
+				</svg>
+			</a>
+		</li>
+	</ul>
+</section>
+				<section class="rules">
+	<h2 class="main__title"><span>5 Правил профессора,</span> чтобы оставаться здоровым! </h2>
+	<p class="main__desc">Профессор Чжан Сяовэй считает, что для того чтобы успешно справиться с различными заболеваниями и на протяжении всей жизни оставаться здоровым, необходимо повысить качество жизни.
+		Для этого следует соблюдать 5 простых, но важных условий:</p>
+	<ul class="rules__list">
+		<li class="rules__item" style="background-image: url(img/rules_01.jpg)">
+			<h3 class="rules__item-title">ВЫСЫПАЙТЕСЬ</h3>
+			<p class="rules__item-desc">Спите не менее 7-8 часов, непрерывно. Ложитесь в одно и то же время. Особенно важен период с 00:00 часов до 02:00 часов ночи – это пик выработки гормона мелатонина, замедляющего старение.</p>
+		</li>
+		<li class="rules__item" style="background-image: url(img/rules_02.jpg)">
+			<h3 class="rules__item-title">СОБЛЮДАЙТЕ РЕЖИМ ТРУДА И ОТДЫХА</h3>
+			<p class="rules__item-desc">Должен быть баланс. Если столкнулись
+				с неразрешимой задачей – оставьте ее на время, восстановите силы.</p>
+		</li>
+		<li class="rules__item" style="background-image: url(img/rules_03.jpg)">
+			<h3 class="rules__item-title">СЛЕДИТЕ ЗА ПИТАНИЕМ</h3>
+			<p class="rules__item-desc">Ваш рацион должен быть разнообразным: овощи и фрукты, рыба и мясо, крупы и орехи. Не переедайте, выходите из-за стола чуть-чуть голодным. Не ешьте за 2 часа до сна.</p>
+		</li>
+		<li class="rules__item" style="background-image: url(img/rules_04.jpg)">
+			<h3 class="rules__item-title">БОЛЬШЕ ДВИГАЙТЕСЬ</h3>
+			<p class="rules__item-desc">Каждый день понемногу, начните с часовых прогулок. Рекомендовано дополнить бегом, плаванием или танцами. Главное – в меру, без перегрузок.</p>
+		</li>
+		<li class="rules__item" style="background-image: url(img/rules_05.jpg)">
+			<h3 class="rules__item-title">ДРУЖИТЕ С ПРИРОДОЙ</h3>
+			<p class="rules__item-desc">Поддерживайте комфортную температуру в доме, тепло одевайтесь при наступлении холодов.</p>
+		</li>
+		<li class="rules__item" >
+			<a href="" class="logo">
+	<svg class="logo__svg">
+		<use xlink:href="img/sprites/sprite.svg#logo"></use>
+	</svg>
+</a>
+		</li>
+
+	</ul>
+</section>
+        <section class="subscribe" id="subscribe">
+	<h2 class="subscribe__title">Подпишись на рассылку
+		выгодных спецпредложений!</h2>
+	<form action="">
+		<input type="email" placeholder="Ваш Email" class="subscribe__input">
+		<button class="subscribe__btn">Подписаться</button>
+	</form>
+</section>
+        <section class="map">
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1c862a37c02a3c2b1bd11da183c6d6669aaa7f74a312574dfe7e6462d95ba800&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+	<div class="map__contacts">
+		<h3>Контакты</h3>
+		<p>г Екатеринбург,
+			ул. Малышева, д. 5
+			ТРЦ «Алатырь», 6 этаж
+		</p>
+		<a href="tel:+73433116505" class="map__link">+7 (343) 311-65-05</a>
+		<a href="tel: +79068006711 " class="map__link">+7 (906) 800-67-11 </a>
+		<ul class="social__list">
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+	</div>
+</section>
+        <footer class="footer">
+	<a href="" class="logo">
+	<svg class="logo__svg">
+		<use xlink:href="img/sprites/sprite.svg#logo"></use>
+	</svg>
+</a>
+	<ul class="footer__list">
+		<li class="footer__item">
+			<div class="footer__phone-wrapper">
+				<a href="tel:+73433116505" class="footer__phone">+7 (343) 311-65-05</a>
+				<a href="tel:+79068006711" class="footer__phone">+7 (906) 800-67-11</a>
+			</div>
+			<a href="mailto:shambala-ayurveda@yandex.ru" class="footer__email">shambala-ayurveda@yandex.ru</a>
+			<p class="footer__desc">620014, г.Екатеринбург, ул.Малышева, д.5,
+				этаж 8, офис 15</p>
+		</li>
+		<li class="footer__item">
+			<span class="footer__item-title">Время работы:</span>
+			<p class="footer__item-sub-title">Ежедневно с 9:00 до 21:00</p>
+			<p class="footer__desc">ООО "ЛАДА"<br>
+				ИНН 6658428847<br>
+				КПП 665801001<br>
+				ОГРН 1136658007507</p>
+		</li>
+		<li class="footer__item">
+			<h3 class="footer__service-title">УСЛУГИ</h3>
+			<ul class="footer__service">
+				<li><a href="">SPA Массаж</a></li>
+				<li><a href="">SPA Комплекс</a></li>
+				<li><a href="">SPA Уход за лицом</a></li>
+				<li><a href="">Парикхмахерская</a></li>
+				<li><a href="">Санаторий у дома</a></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="footer__docs">
+		<li><a href="">Публичная оферта</a></li>
+		<li><a href="">Политика конфиденциальности</a></li>
+		<li><a href="">Процесс передачи данных</a></li>
+		<li><a href="">Виды расчетов, возврата и доставки</a></li>
+		<li><a href="">Пользовательское соглашение</a></li>
+	</ul>
+	<ul class="social__list">
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="">
+			<svg class="social__icon">
+				<use xlink:href="img/sprites/sprite.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+	<span class="footer__copyright">© 2018 Shambala spa & beauty</span>
+</footer>
+        <section class="modal modal--promo">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<div class="modal__top">
+		<h2 class="modal__title">Чжан Сяовэй</h2>
+		<p class="modal__sub-title">Профессор китайской медицины</p>
+		<p class="modal__top-desc">Профессор Чжан - сын военнослужащих. Он первым из своей семьи решил стать доктором и помогать людям, так как с детства испытывал интерес к медицине и старался всячески помочь заболевшим сверстникам. Чжан Сяовэй вдохновил свою младшую сестру пойти по его стопам и стать врачом.</p>
+		<a href="" class="main__btn main__btn--white callback-btn">Записаться</a>
+	</div>
+	<div class="modal__content">
+		<p class="mobile">Профессор Чжан - сын военнослужащих. Он первым из своей семьи решил стать доктором и помогать людям, так как с детства испытывал интерес к медицине и старался всячески помочь заболевшим сверстникам. Чжан Сяовэй вдохновил свою младшую сестру пойти по его стопам и стать врачом.</p>
+		<div class="modal__content-color">
+			<div class="modal__content-wrapper">
+				<p><b>Квалификация Чжан Сяовэй</b></p>
+				<p class="color">Последнее повышение пройдено в 2014 г. в Китае </p>
+			</div>
+			<p>В связи с наступлением возраста
+				70 лет (в 2018 году) дальнейшее подтверждение квалификации «Врача китайской народной медицины» не требуется.
+				Основным местом работы профессора является «Клиника китайской и западной медицины «Чжэнвэньтан»» в городе Пекин. </p>
+		</div>
+		<h2 class="modal__content-title">Образование</h2>
+		<p class="color">Врач КНР по специализации «Китайская народная медицина: клиническое подразделение» (1999 г.);</p>
+		<h2 class="modal__content-title">Дипломы
+			и сертификаты</h2>
+		<p class="color">Диплом Врача китайской медицины, выдан Шаньдунским медицинским институтом (1981 г.);</p>
+		<p class="color">Профессор китайской медицины, удостоверение выдано «Академией китайской медицины, США» (1998 г.);</p>
+		<p class="color">Удостоверение на право осуществления врачебной практики (2005 г.);</p>
+		<p class="color">Дополнительное повышение квалификации (2014 г.).</p>
+		<h2 class="modal__content-title">Курсы</h2>
+		<p class="color">Курсы и практика по специальности «китайская медицина», пройдены в Первом военно-медицинском университете народно-освободительной армии Китая (1986 г.);</p>
+	</div>
+</section>
+<section class="modal modal--distinction">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<div class="modal__top">
+		<h2 class="modal__title">Отличия китайской и западной медицины</h2>
+		<p class="modal__top-desc">Главное отличие между классической европейской и китайской медициной
+			в их подходе к лечению заболевания.
+			Основную разницу между двумя можно описать так:
+			девиз западной медицины - «Ты не справишься, я тебя заменю»,
+			в то же время девиз китайской медицины - «Ты справишься, я тебе помогу».</p>
+	</div>
+	<div class="modal__content">
+		<p class="mobile">Главное отличие между классической европейской и китайской медициной
+			в их подходе к лечению заболевания.
+			Основную разницу между двумя можно описать так:
+			девиз западной медицины - «Ты не справишься, я тебя заменю»,
+			в то же время девиз китайской медицины - «Ты справишься, я тебе помогу».</p>
+		<h2 class="modal__content-title">Традиционная китайская медицина </h2>
+		<p class="color">Основана на вере в неограниченные способности организма к самовосстановлению.</p>
+		<p>Терапия назначается, в первую очередь, для запуска внутренних ресурсов человека. Китайская медицина верит в огромную, во многом недооценённую способность человеческого тела к саморегенерации
+			и лишь прописывает терапию, которая должна послужить мощным толчком для аккумулирования жизненных сил человека.</p>
+		<h2 class="modal__content-title">Западная медицина</h2>
+		<p class="color">Базируется на радикальном лечении болезней – проведении операций, назначении таблеток, пересадке органов.</p>
+		<p>Можно сказать, что западная медицина часто отступает при лечении тяжёлых случаев. И врачи охотно назначают операции по трансплантации органов и замене суставов, либо при медикаментозном лечении часто подсаживают на пожизненную терапию в виде таблеток или уколов.</p>
+	</div>
+</section>
+<section class="modal  modal--methods modal--method-01">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<div class="modal__inner">
+		<div class="modal__bg-img" style="background-image: url(img/modal-method-01.jpg);"></div>
+		<div class="modal__top">
+			<h2 class="modal__title">Фитотерапия</h2>
+			<p class="color">Практикуется в Китае с древнейших времен, до появления иероглифики</p>
+			<p>Основное назначение фитотерапии - профилактика
+				и оздоровление внутренних систем организма </p>
+			<ul class="methods__tag">
+				<li>Стресс</li>
+				<li>Хроническая усталость</li>
+				<li>Гастрит</li>
+			</ul>
+			<a href="" class="main__btn callback-btn">Записаться</a>
+		</div>
+	</div>
+
+	<div class="modal__content">
+		<div class="modal__content-color">
+			<div class="modal__content-wrapper">
+				<p><b style="margin-top: 0;">Фитотерапия</b></p>
+				<p class="color">Эффект от применения фитотерапии наступает после месячного курса</p>
+			</div>
+			<p>Сбор лекарственных трав и других компонентов растительного или животного происхождения.
+				Рецептура каждого сбора подбирается индивидуально для пациента в зависимости от его проблемы.  </p>
+			<p>Травы после сбора высушиваются и отправляются в Пекин. На фабрике они заливаются и кипятятся
+				в резервуаре. После чего вода из емкости сливается, а травы становятся концентратом,
+				напоминающим молоко.
+			</p>
+			<p>Эффект от применения фитотерапии наступает после месячного курса. Для лечения тяжелых, хронических заболеваний потребуется около 3-х месяцев непрерывного приема до полного выздоровления.
+				Повторный курс назначается при рецидиве болезни. </p>
+		</div>
+		<h2 class="modal__content-title">Фитотерапия</h2>
+		<p class="color">Эффективна в профилактике и оздоровлении</p>
+		<p><b>Сердечно-сосудистые</b></p>
+		<p class="color">Анемия, аритмия, атеросклероз, вегето-сосудистая дистония, гипертония, гипертензия,    гиперхолестеринемия, гипотония, ишемическая болезнь сердца, плохое кровообращение, сердечная недостаточность</p>
+		<p><b>Урологические</b></p>
+		<p class="color">Улучшение потенции и повышение либидо, мочекаменная болезнь, пиелонефрит, простатит, цисталгия, цистит, энурез</p>
+		<p><b>Гинекологические</b></p>
+		<p class="color">Бесплодие, гипогалактия, мастопатия, нарушение менструального цикла, низкое содержание половых гормонов, эндометриоз, эндометрит, эндометриальная гиперплазия</p>
+		<p><b>Желудочно-кишечного тракта</b></p>
+		<p class="color">Анорексия, гастрит, метеоризм, диарея, дискинезия желчевыводящих путей, желчнокаменная болезнь, запор, колит, нарушения пищеварительной системы, панкреатит, потеря аппетита, холецистит, хронические заболевания ЖКТ, язва двенадцатиперстной кишки, язва желудка</p>
+		<p><b>Кожные</b></p>
+		<p class="color">Дерматит, дерматомиозит, крапивница, облысение, псориаз, угревая болезнь, целлюлит, экзема</p>
+		<p><b>Иммунологические</b></p>
+		<p class="color">Авитаминоз, аллергия, пониженный иммунитет</p>
+		<p><b>Нервной системы</b></p>
+		<p class="color">Астения, беспокойство, бессонница, нарушение вестибулярного аппарата, депрессия, мигрень, нарушение равновесия, нервный тик, нервное перенапряжение и истощение, невралгия, неврастения, неврит, невроз, ослабление памяти, синдром хронической усталости, рассеянный склероз, эпилепсия</p>
+		<p><b>Органов дыхания, слуха и зрения</b></p>
+		<p class="color">Ангина, бронхиальная астма, бронхит, гайморит, глаукома, истончение радужки глаза, фарингит, ларингит, отит,
+			шумы и давление в ушах, простудные заболевания, ринит, ячмень</p>
+		<p><b>Флебологические</b></p>
+		<p class="color">Варикозное расширение вен, геморрой, флеботромбоз</p>
+		<p><b>Эндокринной системы</b></p>
+		<p class="color">Гипотиреоз, ожирение, нарушение менструальных функций, надпочечниковая недостаточность, мастопатия</p>
+		<p><b>Опорно-двигательного аппарата</b></p>
+		<p class="color">Ишиас, миопатия, остеопороз, полиомиозит, полинейропатия, ревматическая полимиалгия</p>
+		<p><b>Реабилитация</b></p>
+		<p class="color">Инсульт, инфаркт, келоидные рубцы, перелом, паралич, послеоперационные последствия, последствия травмы</p>
+	</div>
+</section>
+<section class="modal  modal--methods modal--method-02">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<div class="modal__inner">
+		<div class="modal__bg-img" style="background-image: url(img/modal-method-02.jpg);"></div>
+		<div class="modal__top">
+			<h2 class="modal__title">Рефлексотерапия</h2>
+			<p class="color">Применяется в Китае более 3000 лет</p>
+			<p>Основное назначение рефлексотерапии - профилактика
+				и оздоровление опорно-двигательного аппарата</p>
+			<ul class="methods__tag">
+				<li>Артрит</li>
+				<li>Миозит</li>
+				<li>Остеохондроз</li>
+			</ul>
+			<a href="" class="main__btn callback-btn">Записаться</a>
+		</div>
+	</div>
+
+	<div class="modal__content">
+		<div class="modal__content-color">
+			<div class="modal__content-wrapper">
+				<p><b style="margin-top: 0;">Рефлексотерапия</b></p>
+				<p class="color">В среднем, курс электропунктуры состоит из 5 процедур</p>
+			</div>
+			<p>Суть метода – точечное воздействие на определенные части тела с помощью иглы, тока или рук. Благодаря этому улучшается состояние, проходит боль.</p>
+			<p>Профессор в своей практике использует: иглоукалывание, электропунктуру и акупрессуру – массаж пальцами рук. Самый эффективный метод – электропунктура, сочетающий иглоукалывание с воздействием тока. Электричество, проходя через ткани, снимает мышечное воспаления, запускает процессы регенерации, разглаживает внутренние рубцы. Воздействие тока сравнимо с тренировкой и мануальной терапией.</p>
+			<p>Количество сеансов электропунктуры определяется индивидуально, в зависимости от ситуации пациента.
+				В среднем, курс состоит из 5 процедур.</p>
+			<p><b style="color: #d62121;">Противопоказания электропунктуры</b></p>
+			<p>Наличие кардиостимулятора, беременность, злокачественные опухоли (обсуждается), ревматоидный артрит и эпилепсия.
+				Относительные противопоказания: наличие металлических имплантов, в период женского цикла. </p>
+		</div>
+		<h2 class="modal__content-title">Рефлексотерапия</h2>
+		<p class="color">ЭЭффективна в профилактике и оздоровлении</p>
+		<p><b>Опорно-двигательного аппарата</b></p>
+		<p class="color">Артрит, артроз, болевой синдром, грыжа, защемление нерва, миозит, остеохондроз, паралич, протрузия межпозвоночного диска, сколиоз, стеноз позвоночного канала</p>
+		<div class="modal__content-color modal__content-color--s">
+			<p>В ряде случаев назначается комплексная терапия, совмещающая в себе фито- и рефлексотерапию </p>
+		</div>
+	</div>
+</section>
+<section class="modal  modal--methods modal--method-03">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<div class="modal__inner">
+		<div class="modal__bg-img" style="background-image: url(img/modal-method-03.jpg);"></div>
+		<div class="modal__top">
+			<h2 class="modal__title">Китайский массаж</h2>
+			<p class="color">Практикуется в Китае с древнейших времен</p>
+			<p>Особенность метода – специалист воздействует руками на точки акупунктуры, его движения направлены вдоль энергетических каналов. Начинается с массажа лица, постепенно руки массажиста симметрично прорабатывают все зоны тела.</p>
+			<a href="" class="main__btn callback-btn">Записаться</a>
+		</div>
+	</div>
+
+	<div class="modal__content">
+		<h2 class="modal__content-title">Динамический цигун</h2>
+		<p class="color">Одна из разновидностей лечебного массажа. Цигун переводится, как работа (Гун) с внутренней энергией (Ци).</p>
+		<div class="modal__content-color modal__content-color--s">
+			<p><b style="margin-top: 0">Принцип заключается в воздействии на невидимые энергетические каналы тела для улучшения прохождения потока Ци. </b></p>
+			<p class="color">Система цигун вышла из китайской народной медицины и сформировалась под влиянием разных религиозных направлений, включая конфуцианство и даосизм. Со временем акцент в практике сдвинулся
+				с традиционной философии на преимущества для здоровья, применение в медицине и боевых искусствах.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="callback">
+	<button class="modal__close">
+		<svg class="modal__close-icon">
+			<use xlink:href="img/sprites/sprite.svg#close"></use>
+		</svg>
+	</button>
+	<h2 class="callback__title">Отправьте нам свои контакты и мы вам перезвоним</h2>
+	<form action="">
+		<input type="text" class="callback__input" placeholder="Ваш телефон">
+		<input type="text" class="callback__input" placeholder="Как к вам обращаться">
+		<textarea cols="30" rows="10" class="callback__textarea" placeholder="На какую процедуру хотите записаться"></textarea>
+		<button class="callback__btn">Перезвоните мне</button>
+	</form>
+	<p>Отправляя свои данные, вы соглашаетесь с политикой обработки персональных данных</p>
+
+</section>
+
+<div class="overlay"></div>
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
     </body>
 </html>

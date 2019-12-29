@@ -1,0 +1,35 @@
+<header class="header">
+
+	<div class="header__top">
+		@@include("../logo/logo.html")
+		@@include("../social/social.html")
+		<ul class="header__contacts">
+			<li class="header__contacts-item">
+				<svg class="header__contact-item-icon">
+					<use xlink:href="img/sprites/sprite.svg#phone"></use>
+				</svg>
+				<div class="header__contacts-item-content">
+					<a href="">+7 (343) 311-65-05</a>
+					<p>ТРЦ Алатырь,
+						ул. Малышева, 5</p>
+				</div>
+			</li>
+			<li class="header__contacts-item">
+				<svg class="header__contact-item-icon">
+					<use xlink:href="img/sprites/sprite.svg#sign"></use>
+				</svg>
+				<div class="header__contacts-item-content">
+					<a href="">Записаться</a>
+					<p>на консультацию</p>
+				</div>
+			</li>
+		</ul>
+		@@include("../main-menu/main-menu.html")
+	</div>
+	<ul class="header__menu">
+		<li><a href="#methods-01">ФИТОТЕРАПИЯ</a></li>
+		<li><a href="#methods-02">РЕФЛЕКСОТЕРАПИЯ</a></li>
+		<li><a href="#methods-03">КИТАЙСКИЙ МАССАЖ</a></li>
+		<li><a href="#subscribe">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a></li>
+	</ul>
+</header>

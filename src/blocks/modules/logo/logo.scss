@@ -1,0 +1,27 @@
+.logo {
+
+}
+
+.logo__svg {
+  width: 140px;
+  height: 32px;
+  transition: all 0.3s;
+  fill: $logo-color;
+  &:hover {
+    fill: $hover-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__svg {
+    width: 190px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .logo__svg {
+    width: 230px;
+    height: 47px;
+  }
+}

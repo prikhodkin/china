@@ -1,0 +1,123 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 300px;
+  padding: 30px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/subscribe.jpg);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #000000, #000000);
+    opacity: 0.75;
+  }
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  position: relative;
+}
+
+.subscribe__input {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* identical to box height, or 229% */
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 3px solid #ffffff;
+  padding: 0 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffffff;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #727272;
+
+  &:focus {
+    outline: none;
+    border-color: $hover-color;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 32px;
+    /* identical to box height, or 229% */
+
+    color: #727272;
+  }
+}
+
+.subscribe__btn {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: none;
+  /* or 171% */
+  transition: all 0.3s;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  background: #0eaa00;
+  border-radius: 50px;
+  margin-top: 25px;
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    min-height: 330px;
+    form {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .subscribe__input {
+    max-width: 350px;
+  }
+  .subscribe__title {
+    font-size: 26px;
+    line-height: 36px;
+    max-width: 410px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .subscribe__btn {
+    max-width: 200px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .subscribe {
+    min-height: 550px;
+  }
+}

@@ -1,0 +1,129 @@
+.rules {
+  .main__title {
+    padding: 0 15px;
+  }
+  .main__desc {
+    padding: 0 15px;
+  }
+}
+
+.rules__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  padding: 30px 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:not(:last-child) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #000000 21.09%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0.7;
+    }
+  }
+  .logo__svg {
+    width: 180px;
+    height: 37px;
+  }
+
+  &:last-child {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rules__item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  color: #ffffff;
+  position: relative;
+}
+
+.rules__item-desc {
+  font-size: 14px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #ffffff;
+  position: relative;
+}
+
+
+
+.rules__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 100vw);
+}
+
+
+@media (min-width: 768px) {
+  .rules__item-title {
+    font-size: 18px;
+    min-height: 64px;
+  }
+
+  .rules {
+    margin-bottom: 50px;
+  }
+
+  .rules__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 50vw);
+  }
+
+  .rules__item-desc {
+    font-size: 16px;
+    min-height: 130px;
+    margin: 0;
+  }
+
+  .rules__item {
+    .logo__svg {
+      width: 230px;
+      height: 47px;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .rules {
+    margin-bottom: 150px;
+    .main__title {
+      padding-left: calc(50% - 585px);
+      padding-right: calc(50% - 585px);
+    }
+
+    .main__desc {
+      max-width: 575px;
+      padding-left: calc(50% - 585px);
+      margin-bottom: 80px;
+    }
+  }
+
+  .rules__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 33vw);
+  }
+
+  .rules__item {
+    padding: 50px;
+  }
+
+  .rules__item-desc {
+    min-height: 156px;
+  }
+}
