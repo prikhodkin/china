@@ -1160,10 +1160,9 @@ ul {
   position: relative;
 }
 
-.rules__list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 100vw);
+.rules__item {
+  width: 100%;
+  height: 100vw;
 }
 
 .subscribe {
@@ -1857,15 +1856,19 @@ a {
   }
 
   .rules__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 50vw);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .rules__item-desc {
     font-size: 16px;
     min-height: 130px;
     margin: 0;
+  }
+
+  .rules__item {
+    width: 50%;
+    height: 50vw;
   }
 
   .rules__item .logo__svg {
@@ -2345,14 +2348,10 @@ a {
     margin-bottom: 80px;
   }
 
-  .rules__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 33vw);
-  }
-
   .rules__item {
-    padding: 50px;
+    flex-grow: 1;
+    width: 33%;
+    height: 33vw;
   }
 
   .rules__item-desc {

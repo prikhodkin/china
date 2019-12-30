@@ -243,6 +243,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.popup, .callback-btn').click(fun
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.overlay').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal').fadeOut();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.overlay').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.callback').fadeOut();
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal__close').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal').fadeOut();
