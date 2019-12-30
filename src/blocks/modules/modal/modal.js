@@ -8,6 +8,7 @@ $('.popup, .callback-btn').click( (evt)=> {
 $('.overlay').click( ()=> {
 	$('.modal').fadeOut();
 	$('.overlay').fadeOut();
+	$('.callback').fadeOut();
 });
 
 $('.modal__close').click(()=> {
